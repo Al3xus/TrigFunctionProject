@@ -1,10 +1,14 @@
-// TrigClass.h
 #ifndef TRIGCLASS_H
 #define TRIGCLASS_H
 
 class TrigClass {
 public:
-    double FuncA(); // функция для вычисления значения
+    // FuncA вычисляет сумму первых n элементов ряда Тейлора для sin(x)
+    double FuncA(int n);
+
+private:
+    // Вспомогательная функция для вычисления факториала
+    int factorial(int n);
 };
 
 #endif

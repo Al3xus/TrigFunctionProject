@@ -3,6 +3,7 @@
 
 int main() {
     TrigClass trig;
-    std::cout << "Result of FuncA: " << trig.FuncA() << std::endl;
+    int n = 5; // Количество членов ряда
+    std::cout << "Сумма первых " << n << " членов ряда Тейлора для sin(1): " << trig.FuncA(n) << std::endl;
     return 0;
 }
